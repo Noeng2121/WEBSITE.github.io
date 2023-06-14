@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        script{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var id,name,sex,school,html,css,javas,total,avg;
+        <!--Input-->
+        id=prompt("Input You ID:");
+        name=prompt("nput Your Name:");
+        sex=prompt("Input Your Gender:");
+        school=prompt("Input Your School Name:");
+        html=parseFloat(prompt("Input html score:"));
+        css=parseFloat(prompt("Input css score:"));
+        javas=parseFloat(prompt("Input javas score:"));
+        total=html+css+javas;
+        avg=total/3;
+        // output
+        document.write("Output ID="+id+"<br>");
+        document.write("Output Name="+name+"<br>");
+        document.write("Output Gneder="+sex+"<br>");
+        document.write("Output School Name="+school+"<br>");
+        document.write("Total score:"+total+"<br>");
+        document.write("Average:"+avg+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(57, 230, 22);
+            border-radius: 100px;
+        }
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(243, 5, 5);
+            border-radius: 100px;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(221, 224, 3);
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Change" name="" id="btn1">
+    <h1 id="box"></h1>
+    <h1 id="box1"></h1>
+    <h1 id="box2"></h1>
+</body>
+<SCRIPt>
+    var key=1;
+    document.getElementById('btn1').onclick=function(){
+        if(key==1){
+            document.getElementById('box').style.display='block';
+            document.getElementById('box1').style.display='none';
+            document.getElementById('box2').style.display='none';
+            key=0;
+        }else{
+            document.getElementById('box').style.display='block';
+            document.getElementById('box1').style.display='block';
+            document.getElementById('box2').style.display='block';
+            key=1;
+        }
+    }   
+</SCRIPt>
+</html>

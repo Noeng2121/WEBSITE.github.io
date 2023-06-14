@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        .txt{
+            font-size: 20px;
+            font-weight: bold;
+            color: gold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="txt" data-kh="1">Like</div>
+    <div class="txt" data-kh="1">You</div>
+    <div class="txt" data-kh="1">Like</div>
+    <div class="txt" data-kh="1">Noeng</div>
+    <div class="txt" data-kh="1">Love</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.txt').click(function(){
+            var eThis=$(this);
+            var kh=eThis.data("kh");
+            if(kh==1){
+                eThis.css({"color":"red","font-size":"20px"});
+                eThis.data("kh","0");
+            }else{
+                eThis.css({"color":"red","font-size":"20px"});
+                eThis.data("kh","1");
+            }
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 70px;
+    background-color: darkcyan;
+    
+}
+.container .right ul li{
+    float: right;
+    padding: 30px;
+    list-style-type: none;
+}
+.container .right ul li:hover{
+    background-color: aquamarine;
+    
+}
+.container .left{
+    width: 50%;
+    height: 100%;
+}
+.container .left img{
+    width: 100px;
+    height: 100%;
+    padding-left:40px;
+}

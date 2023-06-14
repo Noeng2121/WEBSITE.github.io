@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="" value="Hide" id="btn1">
+    <input type="button" name="" value="Show" id="btn2"><br><br>
+    <div id="box"></div>
+    <!--innerHTML
+    <h1 id="demo">Hello</h1>
+    <input type="button" value="Change" name="" id="btn">-->
+</body>
+<script>
+    <!--Show and Hide box-->
+    document.getElementById('btn1').onclick=function(){
+        document.getElementById('box').style.display='none';
+    }
+    document.getElementById('btn2').onclick=function(){
+        document.getElementById('box').style.display='block';
+    }
+    /*innerHTML
+    var key=1;
+    document.getElementById('btn').onclick=function(){
+        if(key==1){
+            document.getElementById('demo').innerHTML="I love my family";
+            document.getElementById('demo').style.color='red';
+            key=0;
+        }else{
+            document.getElementById('demo').innerHTML="hello";
+            document.getElementById('demo').style.color='green';
+            key=1;
+        }
+    }*/
+</script>
+</html>

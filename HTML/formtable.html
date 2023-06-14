@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="#">
+            <label for="naem">Username</label><br>
+            <input type="text" name="" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="" id="email"><br>
+            <label for="password">Enter password</label><br>
+            <input type="password" name="" id="password"><br>
+            <label for="phoneNum">Phone Number</label><br>
+            <input type="phone" name="" id="phone"><br><br>
+            <input type="button" value="add" name="" id="button" class="btn">
+        </form>
+    </center>
+    <table id="table"></table>
+</body>
+<script>
+    var table,i=0;
+    table="";
+    table=table+"<tr><th>Name</th><th>email</th><th>password</th><th>phone</th></tr>"
+    document.querySelector('.btn').onclick=function(){
+        const name=document.getElementById('name').value;
+        const email=document.getElementById("email").value;
+        const password=document.getElementById('password').value;
+        const phone=document.getElementById("phoneNum").value;
+        if(i==0){
+            table="<tr class='blue'><td>"+name+"</td><td>"+email+"</td><td>"+password+"</td><td>"+phoneNum+"</td></tr>"
+            i=1;
+        }
+        else{
+            table="<tr class='green'><td>"+name+"</td><td>"+email+"</td><td>"+password+"</td><td>"+phoneNum+"</td></tr>"
+            i=0;//
+        }
+        document.getElementById("table").innerHTML=table;
+        document.getElementById('name').value="";
+        document.getElementById("email").value="";
+        document.getElementById('password').value="";
+        document.getElementById("phoneNum").value="";
+    };
+</script>
+</html>

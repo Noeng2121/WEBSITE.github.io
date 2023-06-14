@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu-bar{
+            width: 100%;
+            background-color: rgb(134, 209, 209);
+            height: 60px;
+        }
+        .box{
+            margin: 0 auto;
+            width: 50%;
+            height: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            float:right;
+            margin-right: 70px;
+            padding: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="box" id="demo">
+            <ul>
+                <li style="color:green;">HTML</li>
+                <li style="color:blue;">CSS</li>
+                <li style="color:pink;">JAVASCRP</li>
+                <li style="color:yellow;">BOTSTRAP</li>
+                <li style="color:red;">QUERY</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var menu=[
+            {"menu":"HTML","color":"green","size":"20px"},
+            {"menu":"CSS","color":"blue","size":"20px"},
+            {"menu":"Bootstrap","color":"pink","size":"20px"},
+            {"menu":"javascrip","color":"yellow","size":"20px"},
+            {"menu":"Jqurey","color":"red","size":"20px"},
+        ]
+        var ul=''
+        for(i in menu){
+            ul+='<li style="color:'+menu[i].color+';font-size:'+menu[i].size+';">'+menu[i].menu+'</li>' 
+        }
+        document.getElementById('demo').innerHTML='<ul>'+ul+'</ul>';
+    </script>
+</body>
+</html>

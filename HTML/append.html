@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        .main-box{
+            background-color: aqua;
+            width: 30px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Add more" class="btn" name="" id="">
+    <div class="mian-box">
+
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        var i=0;
+        $('.btn').click(function(){
+            i++;
+            var add='<div class="box">'+i+'</div>';
+            $('.main-box').prepend(add);
+        });
+        // $('.btn').click(function(){
+        //     i++;
+        //     var add='<div class="box">'+i+'</div>';
+        //     $('.main-box').append(add);
+        // });
+    });
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/jquery.js"></script>
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/img1.jpg" alt="Image Not Found" data-img1="../img/img10.jpg" data-img2="../img/img5.jpg">
+    <img src="../img/img10.jpg" alt="Image Not Found" data-img1="../img/img1.jpg" data-img4="../img/img7.jpg">
+</body>
+<script>
+    $(document).ready(function(){
+        $('img').mouseover(function(){
+            var eThis=$(this);
+            var img2=eThis.data("img2");
+            eThis.attr("src",img2);
+        });
+        $('img').mouseover(function(){
+            var eThis=$(this);
+            var img1=eThis.data("img1");
+            eThis.attr("scr",img1);
+        });
+    });
+</script>
+</html>
